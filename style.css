@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'ubuntu';
+}
+
+main {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(#58FAD7), to(#63C8F5));
+  background: linear-gradient(to top, #58FAD7, #63C8F5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.glass {
+  background: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  min-height: 80vh;
+  width: 80%;
+  border-radius: 1.5rem;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.left-panel {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-panel .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+.left-panel .logo h1 {
+  color: #2E60C0;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.left-panel .logo h2 {
+  color: #2E60C0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.left-panel .phone-left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left-panel .phone-left .form-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.left-panel .phone-left .form-container form {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-panel .phone-left .form-container form input {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border: none;
+  height: 100%;
+  border: 3px solid white;
+  border-radius: 2rem;
+  width: 78%;
+  color: #2E60C0;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+}
+
+.left-panel .phone-left .form-container form input:focus {
+  outline: none;
+}
+
+.left-panel .phone-left .form-container form input::-webkit-input-placeholder {
+  color: #4F7EB5;
+}
+
+.left-panel .phone-left .form-container form input:-ms-input-placeholder {
+  color: #4F7EB5;
+}
+
+.left-panel .phone-left .form-container form input::-ms-input-placeholder {
+  color: #4F7EB5;
+}
+
+.left-panel .phone-left .form-container form input::placeholder {
+  color: #4F7EB5;
+}
+
+.left-panel .phone-left .form-container form button {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border: 3px solid white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #2E60C0;
+}
+
+.left-panel .random {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 1rem;
+}
+
+.left-panel .random .randomize {
+  padding: 1.2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border: 3px solid white;
+  color: #4F7EB5;
+}
+
+.right-panel {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+}
+
+.right-panel .players-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right-panel .players-container .players {
+  width: 100%;
+  height: 40%;
+  background: -webkit-gradient(linear, right bottom, left top, from(white), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to left top, white, rgba(255, 255, 255, 0.8));
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.15);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.15);
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.right-panel .players-container .players ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  color: #4F7EB5;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.right-panel .players-container .players ul li {
+  margin: 3px;
+}
+
+.right-panel .players-container h1 {
+  font-size: 4rem;
+  color: #4F7EB5;
+}
+
+.right-panel .teams-container {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-panel .teams-container .teams {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.right-panel .teams-container .teams .team {
+  background-color: black;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: -webkit-gradient(linear, right bottom, left top, from(white), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to left top, white, rgba(255, 255, 255, 0.8));
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.15);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.15);
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.right-panel .teams-container .teams .team:nth-child(1) {
+  margin-right: 1.5rem;
+}
+
+.right-panel .teams-container .teams .team:nth-child(2) {
+  margin-left: 1.5rem;
+}
+
+.right-panel .teams-container .teams .team h1 {
+  font-size: 3.5rem;
+  color: #4F7EB5;
+  justify-self: flex-start;
+}
+
+.right-panel .teams-container .teams .team ul {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  color: #4F7EB5;
+  font-size: 1.5rem;
+}
+
+.right-panel .teams-container .teams .team ul li {
+  margin: 3px;
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  html {
+    font-size: 6.5px;
+  }
+  .players {
+    min-height: 35px;
+    word-break: break-all;
+  }
+  .teams {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex: 1;
+        flex: 1;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  html {
+    font-size: 5px;
+  }
+  .players {
+    min-height: 35px;
+    word-break: break-all;
+  }
+  .teams {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex: 1;
+        flex: 1;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+  html {
+    font-size: 5px;
+  }
+  .players {
+    min-height: 35px;
+    word-break: break-all;
+  }
+  .teams {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex: 1;
+        flex: 1;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  html {
+    font-size: 12px;
+  }
+  .players {
+    min-height: 60px;
+    line-height: 60px;
+    word-break: break-all;
+  }
+  .teams {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex: 1;
+        flex: 1;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 500px) and (orientation: portrait) {
+  html {
+    font-size: 9px;
+  }
+  .players {
+    min-height: 60px;
+    line-height: 60px;
+    word-break: break-all;
+  }
+  .teams {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex: 1;
+        flex: 1;
+    min-height: 300px;
+  }
+}
+
+@media (orientation: portrait) {
+  .left-panel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
+  .left-panel .phone-left {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .glass {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
